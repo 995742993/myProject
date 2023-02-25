@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: user-center
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.31.58:3306/prod_user_center
+    username: "root"
+    password: "123456"
+  #session失效时间
+  session:
+    timeout: 86400
+server:
+  port: 8090
+  address: 192.168.153.128
+  servlet:
+    context-path: "/api"
